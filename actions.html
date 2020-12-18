@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Action points</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+</head>
+
+<body>
+    <div id= "header">
+        <ul>
+         <li><a style="text-decoration:none;" href="index.html">Home</a></li>
+         <li><a style="text-decoration:none;" href="impact.html">Impact</a></li>
+         <li><a style="text-decoration:none;" href="actions.html">Action_points</a></li>
+         <li><a style="text-decoration:none;" href="survey.html">Survey_form</a></li>
+        </ul> 
+     </div>   
+     <br><br>   
+    <div>
+    <span id="s6">What can be done?</span>   
+    <br><br>
+    <span id="s7">Countries around the world are tackling various forms of air pollution. 
+        China, for example, is making strides in cleaning up smog-choked skies from years of rapid industrial expansion, 
+        partly by closing or canceling coal-fired power plants. In the U.S., 
+        California has been a leader in setting emissions standards aimed at improving air quality, 
+        especially in places like famously hazy Los Angeles. And a variety of efforts aim to bring cleaner cooking options
+         to places where hazardous cookstoves are prevalent.</span><br>
+    <span id="s8">To curb global warming, a variety of measures need to be taken, such as adding more renewable energy 
+        and replacing gasoline-fueled cars with zero-emissions vehicles such as electric ones. On a larger scale, 
+        governments at all levels are making commitments to limit emissions of carbon dioxide and other greenhouse gases. 
+        The Paris Agreement, ratified on November 4, 2016, is one effort to combat climate change on a global scale. 
+        And the Kigali Amendment seeks to further the progress made by the Montreal Protocol, 
+        banning heat-trapping hydrofluorocarbons (HFCs) in addition to CFCs</span>  
+    </div>   
+    <br><br>    
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img alt = "Smoky sky on a sunset" src="Images/air_pollution_1.jpg" width="100%" height="300px">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img alt = "Electric car charging by electricity" src="Images/electric_car.jpeg" width="100%" height="300px">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img alt = "Solar panels and wind turbines" src="Images/Renewable_energy.jpg" width="100%" height="300px">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+
+<footer>Text by Christina Nunez for National Geographic</footer>
+</html>

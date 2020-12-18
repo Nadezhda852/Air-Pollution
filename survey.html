@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src = "validation.js" ></script>
+    </head>
+
+<body>
+    <div id= "header">
+        <ul>
+         <li><a style="text-decoration:none;" href="index.html">Home</a></li>
+         <li><a style="text-decoration:none;" href="impact.html">Impact</a></li>
+         <li><a style="text-decoration:none;" href="actions.html">Action_points</a></li>
+         <li><a style="text-decoration:none;" href="survey.html">Survey_form</a></li>
+        </ul> 
+    </div>    
+    <br><br>     
+    <fieldset>
+            <legend>Survey Form</legend>
+            <h4>Surveyee information</h4>
+        <form>
+            <div id="surveyeeinf">
+        <label for="t1">Surveyee name:</label> <input id="t1" type="text"><br><br>
+        <label for="t2">Street address:</label> <input id="t2" type="text"><br><br>
+        <label for="t3">Email address:</label> <input id="t3" type="text"><br><br>
+        <label for="t4">Post code:</label> <input id="t4" type="text"><br><br>
+        <label for="t5">Phone number:</label> <input id="t5" type="text"><br><br>
+            </div>
+        <h4>What measures do you take to reduce the air pollution both indoors and outdoors:</h4>
+        
+        <input type="checkbox"><label>Walking and/or cycling when possible</label><br> 
+        <input type="checkbox"><label>Reduce travelling by plane</label><br> 
+        <input type="checkbox"><label>Using air purifiers</label><br> 
+        <input type="checkbox"><label>Increasing ventilation</label><br> 
+    
+        <h4>Other comments:</h4>
+        <textarea></textarea>
+        <br><br>  
+        <p> Under the General Data Protection Regulation (GDPR) (EU) 2016/679, we have a legal duty to protect 
+            any information we collect from you. As such we collect, keep, and process your 
+            private information in compliance with GDPR.</p>
+    
+        <button onclick="validNo()">Submit</button><button>Reset Form</button> 
+    
+    </form>
+    <fieldset>     
+</body>
+</html>
